@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>CS 294-131: Special Topics in Deep Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/cs294-131-s17/assets/css/style.css?v=35498749cfc25cd4b5f373aa759348204177d08d">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">CS 294-131: Special Topics in Deep Learning</h1>
+      <h2 class="project-tagline">Spring 2017</h2>
+      
+    </section>
+
+    <section class="main-content">
+      <h2 id="instructors">Instructors</h2>
+<div class="instructor">
+  <a href="https://people.eecs.berkeley.edu/~trevor/">
+  <div class="instructorphoto"><img src="trevordarrell.jpg" /></div>
+  <div>Trevor Darrell</div>
+  </a>
+</div>
+<div class="instructor">
+  <a href="https://people.eecs.berkeley.edu/~svlevine/">
+  <div class="instructorphoto"><img src="sergeylevine.jpg" /></div>
+  <div>Sergey Levine</div>
+  </a>
+</div>
+<div class="instructor">
+  <a href="https://people.eecs.berkeley.edu/~dawnsong/">
+  <div class="instructorphoto"><img src="dawnsong.jpg" /></div>
+  <div>Dawn Song</div>
+  </a>
+</div>
+
+<h2 id="teaching-assistants">Teaching Assistants</h2>
+<div class="instructor">
+  <a href="#">
+  <div class="instructorphoto"><img src="richardshin.jpg" /></div>
+  <div>Richard Shin</div>
+  </a>
+</div>
+
+<div class="instructor">
+  <a href="https://people.eecs.berkeley.edu/~wckuo/">
+  <div class="instructorphoto"><img src="weichengkuo.jpg" /></div>
+  <div style="font-size: 90%;">Weicheng Kuo</div>
+  </a>
+</div>
+
+<h2 id="lectures">Lectures</h2>
+<p><strong>Time</strong>: Monday 1–2:30 pm</p>
+
+<p><strong>Location</strong>: 306 Soda</p>
+
+<h2 id="office-hours">Office hours</h2>
+<p>Richard: 3-4 PM on Tuesdays in 723 Soda.</p>
+
+<h2 id="mailing-list-and-piazza">Mailing list and Piazza</h2>
+<p>To get announcements about information about the class including guest speakers, and more generally, deep learning talks at Berkeley, please sign up for the <a href="https://groups.google.com/forum/#!forum/berkeley-deep-learning">talk announcement mailing list</a> for future announcements.</p>
+
+<p>For students enrolled in the class, please join the <a href="https://piazza.com/class/iy4vlqa9jqy6aw">Piazza</a> and the <a href="https://groups.google.com/forum/#!forum/cs294-131-s17-students">student Google Group</a>.</p>
+
+<h2 id="syllabus">Syllabus</h2>
+
+<table style="table-layout: fixed; font-size: 88%;">
+  <thead>
+    <tr>
+      <th style="width: 5%;">Date</th>
+      <th style="width: 17%;">Speaker</th>
+      <th style="width: 50%;">Readings</th>
+      <th style="width: 20%;">Talk</th>
+      <th style="width: 8%;">Deadlines</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1/23</td>
+      <td>Devi Parikh</td>
+      <td>No assigned readings for this lecture</td>
+      <td><a href="speakers.html#devi-parikh-visual-question-answering-vqa">Visual Question Answering (VQA)</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1/30</td>
+      <td>Richard Socher</td>
+      <td>
+        <ul>
+          <li><a href="https://arxiv.org/abs/1611.01604">Dynamic Coattention Networks For Question Answering</a>, by Caiming Xiong, Victor Zhong, and Richard Socher</li>
+          <li><a href="https://arxiv.org/abs/1611.01587">A Joint Many-Task Model: Growing a Neural Network for Multiple NLP Tasks</a>, by Kazuma Hashimoto, Caiming Xiong, Yoshimasa Tsuruoka, and Richard Socher</li>
+        </ul>
+      </td>
+      <td>
+        <a href="speakers.html#richard-socher-tackling-the-limits-of-deep-learning-for-nlp">
+          Tackling the Limits of Deep Learning for NLP
+        </a>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2/6</td>
+      <td>Rahul Sukthankar</td>
+      <td>
+        <ul>
+          <li><a href="https://arxiv.org/abs/1611.10012">Speed/accuracy trade-offs for modern convolutional object detectors</a>, by Jonathan Huang et al.</li>
+          <li><a href="https://arxiv.org/abs/1511.06085">Variable Rate Image Compression with Recurrent Neural Networks</a>, by George Toderici et al.</li>
+          <li><a href="https://arxiv.org/abs/1608.05148">Full Resolution Image Compression with Recurrent Neural Networks</a>, by George Toderici et al.</li>
+        </ul>
+      </td>
+      <td>
+        <a href="speakers.html#rahul-sukthankar-recent-progress-on-cnns-for-object-detection-and-image-compression">
+          Recent Progress on CNNs for Object Detection and Image Compression
+        </a>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2/13</td>
+      <td>Bryan Catanzaro</td>
+      <td>
+        <ul>
+          <li><a href="http://www.jmlr.org/proceedings/papers/v28/coates13.pdf">Deep learning with COTS HPC systems</a>, by Adam Coates et al.</li>
+          <li><a href="https://arxiv.org/abs/1512.02595">Deep Speech 2: End-to-End Speech Recognition in English and Mandarin</a>, by Dario Amodei et al.</li>
+        </ul>
+      </td>
+      <td>
+        <a href="speakers.html#bryan-catanzaro-scaling-deep-learning">
+          Scaling Deep Learning
+        </a>
+      </td>
+      <td>Project proposal</td>
+    </tr>
+    <tr>
+      <td>2/20</td>
+      <td colspan="4"><em>No class (President’s Day)</em></td>
+    </tr>
+    <tr>
+      <td>2/27</td>
+      <td>Aaron Hertzmann</td>
+      <td>
+        Main reading:
+        <ul>
+          <li><a href="http://www.mrl.nyu.edu/publications/image-analogies/">Image Analogies</a>, by Aaron Hertzmann et al.</li>
+          <li><a href="http://people.cs.umass.edu/~kalo/papers/LabelMeshes/index.html">Learning 3D Mesh Segmentation and Labeling</a>, by Evangelos Kalogerakis et al.</li>
+        </ul>
+
+        Background reading:
+        <ul>
+          <li><a href="http://dcgi.fel.cvut.cz/home/sykorad/stylit">StyLit</a> (image analogies)</li>
+          <li><a href="http://web.stanford.edu/~ericyi/project_page/part_annotation/index.html">Mesh region annotation</a></li>
+        </ul>
+      </td>
+      <td>
+        <a href="speakers.html#aaron-hertzmann-artistic-stylization-and-geometry-processing">
+          Artistic Stylization and Geometry Processing
+        </a>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3/6</td>
+      <td>Kate Saenko</td>
+      <td>
+        Main reading:
+        <ul>
+          <li><a href="http://dl.acm.org/citation.cfm?id=2984066">Multimodal Video Description</a>, by Vasili Ramanishka et al.</li>
+          <li><a href="https://arxiv.org/abs/1612.07360">Top-down Visual Saliency Guided by Captions</a>, by Vasili Ramanishka et al.</li>
+        </ul>
+        
+        Background reading:
+        <ul>
+          <li><a href="https://arxiv.org/abs/1412.4729">Translating Videos to Natural Language Using Deep Recurrent Neural Networks</a>, by Subhashini Venugopalan et al.</li>
+          <li><a href="https://arxiv.org/abs/1502.03044">Show, attend and tell: Neural image caption generation with visual attention</a>, by Kelvin Xu et al.</li>
+        </ul>
+      </td>
+      <td>
+        <a href="speakers.html#kate-saenko-attentive-captioning-without-attention-designing-and-understanding-lstm-based-captioning-models">
+          Attentive Captioning without Attention: Designing and understanding LSTM-based captioning models
+        </a>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3/13</td>
+      <td>Diedrik Kingma</td>
+      <td>
+        Main reading:
+        <ul>
+          <li><a href="https://arxiv.org/abs/1312.6114">Auto-Encoding Variational Bayes</a>, by Diedrik Kingma and Max Welling</li>
+          <li><a href="https://arxiv.org/abs/1606.04934">Improving Variational Inference with Inverse Autoregressive Flow</a>, by
+            Diedrik Kingma et al.</li>
+        </ul>
+        
+        Optional reading:
+        <ul>
+          <li><a href="https://arxiv.org/abs/1605.08803">Density estimation using Real NVP</a>, by Laurent Dinh,
+            Jascha Sohl-Dickstein, and Samy Bengio</li>
+          <li><a href="https://arxiv.org/abs/1606.05328">Conditional Image Generation with PixelCNN Decoders</a>,
+            by Aaron van den Oord et al.</li>
+        </ul>
+      </td>
+      <td>
+        <a href="speakers.html#diedrik-kingma-unsupervised-deep-learning-with-variational-autoencoders-recent-advances-and-applications">
+          Unsupervised Deep Learning with Variational Autoencoders: Recent Advances and Applications
+        </a>
+      </td>
+      <td>1st project milestone</td>
+    </tr>
+    <tr>
+      <td>3/20</td>
+      <td>Jianxiong Xiao</td>
+      <td>
+        Main reading:
+        <ul>
+          <li><a href="http://deepdriving.cs.princeton.edu/">DeepDriving: Learning Affordance for Direct Perception in Autonomous Driving</a>,
+            by Chenyi Chen et al.</li>
+          <li><a href="http://www.cs.princeton.edu/~aseff/mapnet/">Learning from Maps: Visual Common Sense for Autonomous Driving</a>,
+            by Ari Seff and Jianxiong Xiao</li>
+        </ul>
+      </td>
+      <td>
+        <a href="speakers.html#jianxiong-xiao-learning-affordance-for-autonomous-driving">
+          Learning Affordance for Autonomous Driving
+        </a>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3/27</td>
+      <td colspan="4"><em>No class (spring break)</em></td>
+    </tr>
+    <tr>
+      <td>4/3</td>
+      <td>Le Song</td>
+      <td>
+        Main reading:
+        <ul>
+          <li><a href="https://arxiv.org/abs/1609.03675">
+            Deep Coevolutionary Network: Embedding User and Item Features for Recommendation</a>,
+            by Hanjun Dai et al.</li>
+          <li><a href="http://www.cc.gatech.edu/~lsong/papers/arxiv_rl_combopt.pdf">
+            Learning Combinatorial Optimization Algorithms over Graphs</a>,
+            by Hanjun Dai et al.</li>
+        </ul>
+        Background reading:
+        <ul>
+          <li><a href="http://machinelearning.wustl.edu/mlpapers/paper_files/icml2010_SongSGS10.pdf">
+            Hilbert Space Embeddings of Hidden Markov Models</a>,
+            by Le Song et al.</li>
+          <li><a href="https://arxiv.org/abs/1603.05629">Discriminative Embeddings of Latent Variable Models for Structured Data</a>,
+            by Hanjun Dai et al.</li>
+        </ul>
+      </td>
+      <td>
+        <a href="speakers.html#le-song-embedding-as-a-tool-for-algorithm-design">
+          Embedding as a Tool for Algorithm Design
+        </a>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4/10</td>
+      <td>Alexander Rush</td>
+      <td>
+        Main reading:
+        <ul>
+          <li><a href="https://arxiv.org/abs/1702.00887">
+            Structured Attention Networks</a>,
+            by Yoon Kim, Carl Denton, Luong Hoang, and Alexander M. Rush
+          </li>
+        </ul>
+        
+        Background reading:
+        <ul>
+          <li><a href="https://arxiv.org/abs/1606.02960">
+            Sequence-to-Sequence Learning as Beam-Search Optimization</a>,
+            by Sam Wiseman and Alexander M. Rush
+          </li>
+          <li><a href="https://arxiv.org/abs/1502.05698">
+            Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks</a>,
+            by Jason Weston et al.
+          </li>
+          <li><a href="https://arxiv.org/abs/1409.0473">
+            Neural Machine Translation by Jointly Learning to Align and Translate</a>,
+            by Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio
+          </li>
+        </ul>
+      </td>
+      <td>
+        <a href="speakers.html#alexander-rush-attention-seq-to-seq-and-language-structure">
+          Attention, Seq-to-Seq, and Language Structure
+        </a>
+      </td>
+      <td>2nd project milestone</td>
+    </tr>
+    <tr>
+      <td>4/17</td>
+      <td>Sanjeev Arora</td>
+      <td>
+        Main reading:
+        <ul>
+          <li><a href="https://arxiv.org/abs/1703.00573">
+            Generalization and Equilibrium in Generative Adversarial Nets (GANs)</a>,
+            by Sanjeev Arora et al.
+          </li>
+        </ul>
+        
+        Background reading:
+        <ul>
+          <li><a href="https://arxiv.org/abs/1701.00160">
+            NIPS 2016 Tutorial: Generative Adversarial Networks</a>,
+            by Ian Goodfellow
+          </li>
+        </ul>
+      </td>
+      <td>
+        <a href="speakers.html#sanjeev-arora-generalization-and-equilibrium-in-generative-adversarial-nets-gans">
+          Generalization and Equilibrium in Generative Adversarial Nets (GANs)
+        </a>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4/24</td>
+      <td>Bryan Russell</td>
+      <td>
+        Main reading:
+        <ul>
+          <li><a href="https://arxiv.org/abs/1704.02895">
+            ActionVLAD: Learning spatio-temporal aggregation for action classification</a>,
+            by Rohit Girdhar et al.
+            <a href="https://rohitgirdhar.github.io/ActionVLAD/">
+              Project information
+            </a>
+          </li>
+        </ul>
+        
+        Background reading:
+        <ul>
+          <li><a href="http://wanglimin.github.io/papers/WangXWQLTV_ECCV16.pdf">
+            Temporal Segment Networks: Towards Good Practices for Deep Action Recognition</a>,
+            by Limin Wang et al.
+            <a href="https://github.com/yjxiong/temporal-segment-networks">
+              Code
+            </a>
+          </li>
+          
+          <li><a href="http://www.di.ens.fr/~josef/publications/Arandjelovic16.pdf">
+            NetVLAD: CNN architecture for weakly supervised place recognition</a>,
+            by Relja Arandjelović et al.
+            <a href="http://www.di.ens.fr/willow/research/netvlad/">
+              Project information
+            </a>
+          </li>
+        </ul>
+      </td>
+      <td>
+        <a href="speakers.html#bryan-russell-actionvlad-learning-spatio-temporal-aggregation-for-action-classification">
+          ActionVLAD: Learning spatio-temporal aggregation for action classification
+        </a>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5/1</td>
+      <td colspan="4"><em>Poster session</em></td>
+    </tr>
+    <tr>
+      <td>5/10</td>
+      <td colspan="4"><em>Final project report due</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="course-description">Course description</h2>
+<p>In recent years, deep learning has enabled huge progress in many domains including computer vision, speech, NLP, and robotics. It has become the leading solution for many tasks, from winning the ImageNet competition to winning at Go against a world champion. This class is designed to help students develop a deeper understanding of deep learning and explore new research directions and applications of deep learning. It assumes that students already have a basic understanding of deep learning. In particular, we will explore a selected list of new, cutting-edge topics in deep learning, including new techniques and architectures in deep learning, security and privacy issues in deep learning, recent advances in the theoretical and systems aspects of deep learning, and new application domains of deep learning such as autonomous driving.</p>
+
+<h2 id="class-format-and-project">Class format and project</h2>
+<p>This is a lecture, discussion, and project oriented class. Each lecture will focus on one of the topics, including a survey of the state-of-the-art in the area and an in-depth discussion of the topic. Each week, students are expected to complete reading assignments before class and participate actively in class discussion.</p>
+
+<p>Students will also form project groups (two to three people per group) and complete a research-quality class project.</p>
+
+<p>Please also refer to the <a href="https://docs.google.com/presentation/d/1rI8Bk4T966Ti_KrxsC9C7P3SJyi8EcWA1XG9yi_peZs/pub?slide=id.g1c222e6ff1_0_0">course overview slides</a>
+from the first lecture for more information.</p>
+
+<h2 id="enrollment-information">Enrollment information</h2>
+<p><strong>For undergraduates</strong>: Please note that this is a graduate-level class. However, with instructors’ permission, we do allow qualified undergraduate students to be in the class. If you are an undergraduate student and would like to enroll in the class, please fill out <strong><a href="https://docs.google.com/forms/d/e/1FAIpQLSeqTsnv5sBSr6JPGt8RZPfUbRS73cfZBXMZiaC59xNyk1V29Q/viewform">this form</a></strong> and come to the first lecture of the class. Qualified undergraduates will be given instructor codes to be allowed to register for the class after the first lecture of the class, subject to space availability.</p>
+
+<p>Students may enroll in this class for variable units.</p>
+
+<ul>
+  <li>1 unit: Participate in reading assignments (including serving as discussion lead).</li>
+  <li>2 units: Complete a project.</li>
+  <li>3 units: Both reading assignments and a project.</li>
+</ul>
+
+<p><a href="http://classes.berkeley.edu/content/2017-spring-compsci-294-131-lec-131">Listing in the Berkeley Academic Guide</a>. Class # is 34001.</p>
+
+<h2 id="deadlines">Deadlines</h2>
+<ul>
+  <li>Reading assignment deadlines:
+    <ul>
+      <li>For students,
+        <ul>
+          <li>Submit questions by Friday noon</li>
+          <li>Vote on the poll of discussion questions by Saturday 11:59 pm</li>
+        </ul>
+      </li>
+      <li>For discussion leads,
+        <ul>
+          <li>Send form to collect questions from students by Wednesday 11:59 pm</li>
+          <li>Summarize questions proposed by students to form the poll and send it by Friday 11:59 pm</li>
+          <li>Summarize the poll to generate a ranked &amp; categorized discussion question list and send the list to teaching staff by Sunday 7pm</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Project deadlines:
+    <ul>
+      <li>February 13: project proposal due</li>
+      <li>March 13: first project milestone report due</li>
+      <li>April 10: second project milestone report due</li>
+      <li>May 1: poster session</li>
+      <li>May 10: final project report due</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="grading">Grading</h2>
+<ul>
+  <li>20% class participation</li>
+  <li>25% weekly reading assignment
+    <ul>
+      <li>10% discussion leads</li>
+      <li>15% individual reading assignments</li>
+    </ul>
+  </li>
+  <li>55% project</li>
+</ul>
+
+<h2 id="additional-notes">Additional Notes</h2>
+<ul>
+  <li>For students who need computing resources for the class project, we recommend you to look into AWS educate program for students. You’ll get 100 dollar’s worth of sign up credit. Here’s the <a href="https://aws.amazon.com/education/awseducate/apply/"> link </a>.</li>
+</ul>
+
+
+      <footer class="site-footer">
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+          All information is tentative and subject to change.</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>
